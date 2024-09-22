@@ -1,0 +1,71 @@
+.cta {
+  background-color: var(--Desaturated-Blue);
+  color: #fff;
+  padding-block: 2rem;
+}
+
+.ctaContent {
+  width: 90%;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.cta p {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta input {
+  margin-bottom: 0.6rem;
+}
+
+.form {
+  position: relative;
+}
+
+.cta input:invalid ~ button {
+  margin-top: 1.5rem;
+}
+
+.cta label {
+  position: absolute;
+  bottom: 45%;
+  left: 0;
+  font-size: .875rem;
+  visibility: hidden;
+  opacity: 0;
+  color: #ff0000;
+}
+
+.cta input:invalid + label {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 62.5rem) {
+  .cta {
+    padding-bottom: 3.75rem;
+    padding-top: 6rem;
+  }
+  .ctaContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    text-align: start;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .cta h2 {
+    font-size: 2rem;
+  }
+
+  .cta p {
+    font-size: 1.1rem;
+  }
+
+  .cta button {
+    width: fit-content;
+    padding-inline: 2rem;
+  }
+}

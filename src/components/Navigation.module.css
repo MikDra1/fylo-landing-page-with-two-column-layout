@@ -1,0 +1,39 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1.5rem;
+    padding-inline: 5%;
+}
+
+.navigation img {
+    width: 5rem
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navigation li {
+    font-size: .875rem;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 37.5rem) {
+    .navigation {
+        padding-block: 3rem;
+    }
+    .navigation img {
+        width: 10rem;
+    }
+
+    .navigation ul {
+        gap: 3.5rem;
+    }
+    
+    .navigation li {
+        font-size: 1.1rem;
+    }
+}

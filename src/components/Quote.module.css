@@ -1,0 +1,49 @@
+.quote {
+    width: 90%;
+    margin-inline: auto;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+
+.quote > p {
+    font-size: .825rem;
+    margin-top: .5rem;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+.person img {
+    width: 3rem;
+    border-radius: 100vw;
+}
+
+.person h3 {
+    font-size: 1rem;
+}
+
+.person p {
+    font-size: 0.75rem;
+}
+
+@media (min-width: 62.5rem) {
+    .quote {
+        width: 44%;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .person {
+        gap: 1rem;
+    }
+
+    .person img {
+        width: 2.5rem;
+    }
+}

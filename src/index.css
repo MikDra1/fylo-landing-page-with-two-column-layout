@@ -1,0 +1,106 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Raleway", sans-serif;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3, 
+h4,
+h5, 
+h6 {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+:root {
+
+--Very-Dark-Blue: hsl(243, 87%, 12%);
+--Desaturated-Blue: hsl(238, 22%, 44%);
+
+
+--Bright-Blue: hsl(224, 93%, 58%);
+--Moderate-Cyan: hsl(170, 45%, 43%);
+--Light-Grayish-Blue: hsl(240, 75%, 98%);
+--Light-Gray: hsl(0, 0%, 75%);
+}
+
+.btn {
+  background-color: var(--Bright-Blue);
+  border: none;
+  color: #fff;
+  width: 100%;
+  padding-block: .75rem;
+  font-weight: bold;
+  border-radius: .3rem;
+  box-shadow: .1rem .1rem 1.5rem rgba(0, 0, 0, .2);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.btn:hover {
+  background-color: hsl(224, 93%, 70%);
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding-block: .75rem;
+  padding-inline: 1rem;
+  border-radius: .3rem;
+  border: 1px solid black;
+}
+
+
+
+.input::placeholder {
+  color: var(--Light-Gray);
+}
